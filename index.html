@@ -1,48 +1,229 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-primary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Nelson Bali.com</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="#">About me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a> 
-        </li> 
-    </div>
-  </div>
-</nav>
-<div class="container-fluid mt-2 bg-primary">
-    <div class="text-center">
-    <img src="foto1.png" class="rounded-circle" alt="..." width="100">
-    <h3>Nelson Bali.com</h3>
-    <h4>Welcome to My Website</h4>
-</div>
-</div>
-<section class="container my-5">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <h1 class="text-danger">Welcome to My Website</h1>
-               <p>Selamat datang di website saya! Terima kasih telah meluangkan waktu untuk berkunjung. Website ini dibuat sebagai tempat untuk berbagi informasi, karya, pengalaman, serta berbagai hal menarik yang dapat memberikan manfaat dan inspirasi bagi setiap pengunjung.
-                    Saya berharap website ini dapat menjadi media yang informatif, mudah digunakan, dan memberikan pengalaman yang menyenangkan. Silakan jelajahi setiap halaman untuk mengetahui lebih banyak tentang saya, melihat berbagai proyek yang telah saya kerjakan, serta membaca artikel dan informasi yang tersedia. </p>
-          </div>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nelson Bali | Personal Portfolio</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
 
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Nelson Bali</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portofolio">Portofolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
       </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+    </div>
+  </nav>
+
+  <!-- Hero / Profile Section -->
+  <header id="home" class="bg-primary text-white text-center py-5">
+    <div class="container py-5">
+      <img src="foto1.png" class="rounded-circle img-thumbnail mb-3" alt="Foto Profile Nelson" style="width: 150px; height: 150px; object-fit: cover;">
+      <h1 class="display-4 fw-bold">Nelson Fahuwusa Bali</h1>
+      <p class="lead">Mahasiswa | Web Developer Pemula | Desain Grafis</p>
+    </div>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about" class="container my-5 py-5">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-3">About Me</h2>
+        <p class="text-muted fs-5" style="line-height: 1.8;">
+          Saya adalah seorang mahasiswa yang sedang berfokus mempelajari pengembangan website modern menggunakan <strong>HTML, CSS, Bootstrap, dan JavaScript</strong>. Saya memiliki ketertarikan tinggi pada teknologi baru dan berambisi untuk menjadi seorang Web Developer profesional.
+        </p>
+      </div>
+      <div class="col-lg-6">
+        <div class="p-4 bg-white shadow rounded border">
+          <h4 class="fw-bold mb-3 text-primary"><i class="bi bi-person-lines-fill me-2"></i>Sekilas Info</h4>
+          <ul class="list-unstyled mb-0 fs-6">
+            <li class="mb-3"><strong>Nama :</strong> Nelson Fahuwusa Bali</li>
+            <li class="mb-3"><strong>Umur :</strong> 19 Tahun</li>
+            <li class="mb-3"><strong>Pendidikan :</strong> Teknologi Rekayasa Perangkat Lunak</li>
+            <li><strong>Email :</strong> nelsonfahuwusa@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Keahlian Section -->
+  <section id="keahlian" class="bg-light py-5">
+    <div class="container py-5">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold d-inline-block border-bottom border-primary border-3 pb-2">Keahlian</h2>
+      </div>
+      <div class="row g-4">
+        <!-- Keahlian 1 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100 border-0 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="HTML Coding" style="height: 180px; object-fit: cover;">
+            <div class="card-body text-center p-4">
+              <i class="bi bi-filetype-html text-primary display-4 mb-2"></i>
+              <h4 class="fw-bold">HTML</h4>
+              <p class="text-muted mb-0">Membuat struktur dasar website yang rapi, terstruktur, dan sesuai standar web modern.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Keahlian 2 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100 border-0 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="CSS & Responsive Design" style="height: 180px; object-fit: cover;">
+            <div class="card-body text-center p-4">
+              <i class="bi bi-bootstrap text-primary display-4 mb-2"></i>
+              <h4 class="fw-bold">CSS & Bootstrap</h4>
+              <p class="text-muted mb-0">Merancang tampilan antarmuka yang modern, estetis, dan fleksibel di berbagai perangkat.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Keahlian 3 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100 border-0 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="JavaScript Code" style="height: 180px; object-fit: cover;">
+            <div class="card-body text-center p-4">
+              <i class="bi bi-filetype-js text-primary display-4 mb-2"></i>
+              <h4 class="fw-bold">JavaScript</h4>
+              <p class="text-muted mb-0">Menambahkan fungsionalitas, logika interaktif, dan dinamika pada halaman web.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portofolio Section -->
+  <section id="portofolio" class="container py-5">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold d-inline-block border-bottom border-primary border-3 pb-2">Portofolio</h2>
+    </div>
+    <div class="row g-4">
+      <!-- Project 1 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100 overflow-hidden border-0">
+          <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Project Website Berita" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="fw-bold">Website Berita</h5>
+            <p class="text-muted card-text">Proyek layouting website berita menggunakan HTML dan CSS murni.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100 overflow-hidden border-0">
+          <img src="https://images.unsplash.com/photo-1522204538344-922f76efe0a9?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Project Website Toko" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="fw-bold">Website Toko Online</h5>
+            <p class="text-muted card-text">Desain landing page toko online sederhana untuk produk UMKM.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100 overflow-hidden border-0">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Project Website Pribadi" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="fw-bold">Website Personal</h5>
+            <p class="text-muted card-text">Website portofolio dan personal branding responsif berbasis Bootstrap.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100 overflow-hidden border-0">
+          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Project Desain UI UX Aplikasi Mobile" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="fw-bold">UI/UX Mobile App</h5>
+            <p class="text-muted card-text">Rancangan antarmuka aplikasi mobile dengan tampilan intuitif dan ramah pengguna.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Project 5 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100 overflow-hidden border-0">
+          <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Project Branding & Desain Logo" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="fw-bold">Branding & Logo UMKM</h5>
+            <p class="text-muted card-text">Desain identitas visual, logo, dan aset promosi digital untuk kuliner lokal.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Project 6 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100 overflow-hidden border-0">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Project Web Dashboard Admin" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="fw-bold">Dashboard Admin</h5>
+            <p class="text-muted card-text">Pengembangan halaman web dashboard untuk manajemen data dan visualisasi grafik.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak Section -->
+  <section id="kontak" class="bg-light py-5">
+    <div class="container py-5">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold d-inline-block border-bottom border-primary border-3 pb-2">Hubungi Saya</h2>
+        <p class="text-muted">Mari berdiskusi tentang proyek atau peluang kerja sama</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card border-0 shadow p-4 rounded-3 bg-white">
+            <form id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold">Nama Lengkap</label>
+                  <input type="text" class="form-control form-control-lg fs-6" placeholder="Masukkan nama Anda" required>
+                </div>
+              </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold">Email</label>
+                  <input type="email" class="form-control form-control-lg fs-6" placeholder="nama@email.com" required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label fw-semibold">Subjek</label>
+                  <input type="text" class="form-control form-control-lg fs-6" placeholder="Subjek pesan" required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label fw-semibold">Pesan</label>
+                  <textarea class="form-control form-control-lg fs-6" rows="4" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+                </div>
+                <div class="col-12 text-center mt-4">
+                  <button type="submit" class="btn btn-primary btn-lg w-100 fw-semibold shadow-sm">Kirim Pesan</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center py-4">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 Nelson Bali | Personal Branding Website</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
